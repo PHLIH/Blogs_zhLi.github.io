@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pheno's Vue 3 博客</title>
-  <script type="module" crossorigin src="/Blogs_zhLi.github.io/assets/index-CjkWdzA4.js"></script>
-  <link rel="stylesheet" crossorigin href="/Blogs_zhLi.github.io/assets/index-bysVzzCH.css">
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vite App</title>
+  <script>
+    const saved = localStorage.getItem('theme');
+    const isDark = saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    if (isDark) document.documentElement.classList.add('dark');
+  </script>
+  <script type="module" crossorigin src="/assets/index-884SY3yT.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Crp3CFcI.css">
 </head>
 
 <body>
-    <div id="app"></div>
-
+  <div id="app"></div>
 </body>
-
 
 </html>
